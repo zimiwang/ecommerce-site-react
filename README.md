@@ -1,3 +1,8 @@
+# 🔗 Live Demo
+
+👉 [Click here to view the site on Vercel](https://my-app-tau-ecru-66.vercel.app/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
