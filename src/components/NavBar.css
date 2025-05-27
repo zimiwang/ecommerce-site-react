@@ -1,0 +1,60 @@
+/* Ensure global removal of pseudo-element dividers */
+.ui.menu > .item:before,
+.navbar-menu > .item:before {
+  display: none !important; /* Disable pseudo-element */
+  content: none !important; /* Ensure pseudo-element is completely removed */
+}
+.centered-menu .item:hover {
+  color: #007bff !important; /* Hover effect */
+}
+
+.responsive-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 1px 0;
+  border-top: none !important; /* Ensure NavBar has no top border */
+  border-bottom: none !important; /* Ensure NavBar has no bottom border */
+  border-left: none !important; /* Ensure NavBar has no left border */
+  border-right: none !important; /* Ensure NavBar has no right border */
+  box-shadow: none !important; /* Ensure no shadow */
+}
+
+.navbar-menu .item {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  border: none; /* Remove border */
+  margin: 0; /* Remove margin */
+}
+
+.navbar-menu .item:hover {
+  color: #007bff;
+}
+
+.hidden-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hidden-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}

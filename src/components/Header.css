@@ -1,0 +1,70 @@
+/* Custom Header Background Color */
+.custom-header {
+  background-color: #DEC0B8 !important; /* Soft pink, matching the logo */
+  border-bottom: 2px solid #A15D5D; /* Border color matches overall style */
+  font-family: 'Arial', sans-serif;
+  padding: 10px 0;
+  border-top: none !important; /* Ensure no top border on header */
+  border-bottom: none !important; /* Ensure no bottom border on header */
+  border-left: none !important; /* Ensure no left border on header */
+  border-right: none !important; /* Ensure no right border on header */
+  box-shadow: none !important; /* Ensure no shadow */
+}
+
+/* Remove divider lines between menu items */
+.custom-header .item {
+  border-left: none !important; /* Remove left border */
+  border-right: none !important; /* Remove right border */
+  box-shadow: none !important; /* Remove shadow */
+  margin: 0 !important; /* Remove default margin */
+  padding: 0 15px !important; /* Adjust padding */
+}
+
+/* Disable semantic-ui-react default dividers */
+.ui.menu > .item:before {
+  display: none !important; /* Disable dividers */
+}
+/* Remove pseudo-element dividers between menu items */
+.custom-header .menu .item:before {
+  display: none !important; /* Disable pseudo-element */
+}
+
+/* LOGO Style */
+.header-logo {
+  height: 75px; /* Adjust LOGO size as needed */
+  margin: auto;
+}
+
+/* Icon Style */
+.custom-header .icon {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Hover effect */
+.custom-header .item:hover {
+  background-color: #c89a91; /* Color on hover */
+}
+
+.logo-container {
+  display: flex; /* Use Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-grow: 1; /* Expand to fill remaining space */
+  text-align: center; /* Ensure text and image are centered */
+}
+
+/* Hide text alignment next to LOGO */
+.logo-container .item {
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-logo {
+    height: 40px;
+  }
+  .custom-header .icon {
+    font-size: 16px;
+  }
+}

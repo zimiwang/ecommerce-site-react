@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.menu {
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.menu .item {
+  font-size: 16px;
+  color: #333;
+  margin-right: 15px;
+}
+
+.menu .item:hover {
+  color: #007bff;
+}
+
+.dropdown .menu {
+  background: #ffffff;
+  border: 1px solid #ddd;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
